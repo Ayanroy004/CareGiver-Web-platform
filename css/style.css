@@ -1,0 +1,91 @@
+/* ------------------------Global CSS Start---------------------- */
+:root{
+    --primaryColour : #10BFD9;
+    --secondaryColour : #A02334;
+    --bgColour : #1A3636F7;
+    --bgColour2 : #1A3636;
+    --bgForm : #32443D; 
+    --headerBlack : #181717ED;
+    --orange : #F04D23;
+    --grey : #4A5660;
+    --inputBoxColour : #D9D9D9;
+    --red : #FC2F2F;
+    --green : #0FBE0F;
+}
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body{font-family: "Esteban", serif;font-weight: 400;background-color: var(--bgForm)}
+
+/* button */
+button{background-color: var(--secondaryColour);color: white;font-size: 18px;line-height: 21px;font-weight: 600;font-family: "Chakra Petch", sans-serif;border: none;padding: 17px 30px;border-radius: 28px;cursor: pointer;transition: all 0.4s;}
+button:hover{background-color: #a02334c3;color: #eeeeee;}
+
+
+/* section gaps */
+.sec-gap{padding-block: 70px;}
+
+/* input box */
+input, textarea{padding-inline-start: 19px;padding-block: 26px; width: 100%; color: black; background-color:var(--inputBoxColour); border: none; border-radius: 12px;font-size: 16px;}
+input::placeholder, textarea::placeholder{color: #696767;}
+input:focus-visible{box-shadow: none;box-shadow: 1px 0px 3px 2px var(--primaryColour); outline: none;}
+
+/* img,svg */
+
+img{height: 100%;width: 100%;object-fit: contain;}
+svg{height: 100%;width: 100%;}
+
+/* Container */
+.custom-container {
+    width: 100%;
+    max-width: 1320px; /* Maximum width at larger screens */
+    margin: 0 auto; /* Center the container */
+    padding: 0 12px; /* Add some padding on the sides */
+  }
+
+  @media (max-width: 1200px) {
+    .custom-container {
+      max-width: 960px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .custom-container {
+      max-width: 720px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .custom-container {
+      max-width: 100%;
+    }
+  }
+
+/* ------------------------------Global CSS End------------------- */
+
+/* -------------------------Typography Start------------------------ */
+
+
+h1{font-family: "Chakra Petch", sans-serif;font-weight: 700;font-size: 46px;line-height: 55px;text-shadow: 
+    /* Stroke effect */
+    -2px -2px 0px white, 
+    2px -2px 0px white,
+    -2px 2px 0px white,
+    2px 2px 0px white,
+    /* Drop shadow effect */
+    7px 1px 2px rgba(0, 0, 0, 1);text-align: center;}
+h2{font-family: "Cambay", sans-serif;font-weight: 600;font-size: 36px;line-height: 43px;color: #000000;}
+h3{font-family: "Cambay", sans-serif;font-weight: 600;font-size: 28px;line-height: 33px;color: #000000;}
+
+h4{font-family: "Chakra Petch", sans-serif;font-weight: 600;font-size: 24px;line-height: 29px;color: #000000;}
+h5{font-family: "Chakra Petch", sans-serif;font-weight: 600;font-size: 20px;line-height: 25px;color: #000000;}
+
+p{font-size: 18px;line-height: 27px;color: white;}
+
+/* ---------------------------Typography End------------------ */
+
+/* --------------------------Button Start-------------------- */
+.outline-button{background-color: transparent;border: 2px solid var(--secondaryColour);}
+.outline-button:hover{background-color: var(--secondaryColour);border: 2px solid transparent;color: #eeeeee;}
+.full-button{border-radius: 12px;width: 100%;}
+/* ------------------------Button End------------------------- */
+
+/* ---------------------------Header start-------------------------- */
